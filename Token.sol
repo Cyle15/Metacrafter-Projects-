@@ -26,11 +26,25 @@ contract MyToken {
     mapping(address => uint256) public balances;
 
     //cons for token detail
-    constructo
+    constructor(string memory _name, string memory _symbol, uint256 _initialSupply) {
+       name = _name;
+       symbol = _symbol;
+       totalSupply = initialSupply;
+     //Assign initial supply to contract deployer 
+       balances[msg.sender] = _initialSupply;
+}
 
     // mint function
+    function mint(address _to, uint256 _amount) public {
+        totalSupply += _amount;
+        balances[_to] += _amount;
 
     // burn function
-
+    function burn(address _from, uint256 _amount) public {
+        require(balances[_from] >= _amount, "Insufficient balance to burn");
+        totalSupply -= _amount;
+        balances[_from] -= _amount;
+    }
+}
 }
 
