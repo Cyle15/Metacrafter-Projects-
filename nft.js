@@ -35,9 +35,9 @@ function getTotalSupply() {
 // Call your functions below this line
 
 // Mint some NFTs
-mintNFT("Digital Sunrise", "Alice Smith", "2023-05-01", "A beautiful digital painting of a sunrise.");
-mintNFT("Virtual Reality", "Bob Johnson", "2023-06-15", "An immersive VR experience artwork.");
-mintNFT("Pixelated Dreams", "Carol White", "2023-07-30", "A pixel art piece reminiscent of 8-bit games.");
+mintNFT("Digital Piece#1", "Bob Marley", "2023-05-01", "A beautiful digital painting of a sunrise.");
+mintNFT("Virtual Piece#2", "Mac Devin", "2023-06-15", "An immersive VR experience artwork.");
+mintNFT("Pixelated Piece#3", "Darly Ong", "2023-07-30", "A pixel art piece reminiscent of 8-bit games.");
 
 // List all NFTs
 listNFTs();
